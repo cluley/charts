@@ -229,6 +229,10 @@ void MainWindow::on_pb_start_clicked()
         numberSelectChannel = 0xED;
     }
 
+    if(!(chart->series().isEmpty())){
+        series->clear();
+        chart->removeSeries(series);
+    }
 
     auto read = [&]{ return ReadFile(pathToFile, numberSelectChannel); };
     auto process = [&](QVector<uint32_t> res){ return ProcessFile(res);};
