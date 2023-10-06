@@ -1,0 +1,4 @@
+C:/Users/oo43/Documents/QtCreator/Charts/Builds/Debug/CMakeFiles/PreGraphic.dir
+C:/Users/oo43/Documents/QtCreator/Charts/Builds/Debug/CMakeFiles/edit_cache.dir
+C:/Users/oo43/Documents/QtCreator/Charts/Builds/Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/oo43/Documents/QtCreator/Charts/Builds/Debug/CMakeFiles/PreGraphic_autogen.dir

@@ -17,9 +17,6 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
-        chartwindow.h
-        chartwindow.cpp
-        chartwindow.ui
 )
 
 

@@ -14,8 +14,6 @@
 #include <QtCharts>
 #include <QChartView>
 
-#include "chartWindow.h"
-
 #define FD 1000.0 //частота дискретизации
 
 QT_BEGIN_NAMESPACE
@@ -63,7 +61,6 @@ private:
     QChart* chart;
     QChartView* chartView;
     QGridLayout *layout;
-    chartWindow* chartWin;
 
 };
 #endif // MAINWINDOW_H

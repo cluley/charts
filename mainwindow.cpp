@@ -16,8 +16,6 @@ MainWindow::MainWindow(QWidget *parent)
     chartView = new QChartView;
     layout = new QGridLayout;
 
-    chartWin = new chartWindow(this);
-    chartWin->setLayout(layout);
     layout->addWidget(chartView);
 
     connect(this, &MainWindow::sgnl_dataDisplay, this, &MainWindow::slot_dataDisplay);
@@ -239,7 +237,7 @@ void MainWindow::on_pb_start_clicked()
                                                 mins = FindMin(res);
                                                 DisplayResult(mins, maxs);
 
-                                                for(int i = 0; i < res.size(); ++i)
+                                                for(int i = 0; i < 1000; ++i)
                                                 {
                                                     series->append(i, res[i]);
                                                 }
@@ -261,11 +259,9 @@ void MainWindow::slot_dataDisplay()
     chart->setTitle("Data Display");
     chart->addSeries(series);
     chart->createDefaultAxes();
-    chart->axes(Qt::Vertical).first()->setRange(0, 0.2);
 
     chartView->setChart(chart);
     chartView->setRenderHint(QPainter::Antialiasing);
 
-    chartWin->show();
     chartView->show();
 }
